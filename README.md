@@ -30,9 +30,6 @@ Here are some ideas to get you started:
 - 국어국문학과 출신 수학 강사이자 빅데이터 새내기예요.
 - 새로운 필드에서 배우는 것에 주저함이 없어요.
 
-<br> <br>
-
-
 <a href="mailto:holicalday@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=holicalday@gmail.com"/></a> <a href="https://www.notion.so/d40d7194fc43475a8395d9cb85898c77?pvs=4"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white&link=https://www.notion.so/d40d7194fc43475a8395d9cb85898c77?pvs=4"/></a> [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=bbalgang)](https://velog.io/@bbalgang) 
 
 
