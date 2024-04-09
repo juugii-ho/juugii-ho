@@ -40,7 +40,7 @@ Here are some ideas to get you started:
 
  <a href="https://datainstitute.knu.ac.kr/contents/page/selectPageNomalView.do?menuId=334&selectedId=2&"><img src="https://datainstitute.knu.ac.kr/uploads/ckeditor/62731550473920698.png"/></a>
 
-
+<!---
 |Week|Subject|Badge|
 |:---:|:---:|:---|
 |1주차|Pyhon|![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)|
@@ -57,17 +57,17 @@ Here are some ideas to get you started:
 |12주차|웹 활용||
 |13주차|AWS 클라우드||
 |14주차~|기업 프로젝트||
+--->
 
 
 
-
-|        |     1주차       |     2주차       |        3주차        |     4주차       |     5주차       |         6주차           |             7주차                |
-|:--------:|:----------------:|:----------------:|:-------------------:|:----------------:|:----------------:|:------------------------:|:-----------------------------------:|
-| 주제   | Python         | Pandas         | 공공데이터        | SQL            | 크롤링         | 통계&Numpy         | Machine Learning              |
-| 로고   | ![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) | ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) | ![mysql](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white) | ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white) | ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) | ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) |
-|        |          8주차          |           9주차         |     10주차        |11주|     12주차            |   13주차       | 14주차~         |
-| 주제   | Deep Learning          | CV                       | 자연어 처리        | 웹 기초                                                                            | 웹 활용               | AWS 클라우드 | 기업 프로젝트  |
-| 로고   | ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) | ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) |                                                               | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) <br> ![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) <br> ![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white) | |||
+|     1주차       |     2주차       |        3주차        |     4주차       |     5주차       |         6주차           |             7주차                |
+|:----------------:|:----------------:|:-------------------:|:----------------:|:----------------:|:------------------------:|:-----------------------------------:|
+| Python         | Pandas         | 공공데이터        | SQL            | 크롤링         | 통계&Numpy         | Machine Learning              |
+| ![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) | ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) | ![mysql](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white) | ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white) | ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) | ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) |
+|          8주차          |           9주차         |     10주차        |11주|     12주차            |   13주차       | 14주차~         |
+| Deep Learning          | CV                       | 자연어 처리        | 웹 기초                                                                            | 웹 활용               | AWS 클라우드 | 기업 프로젝트  |
+| ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) | ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) |                                                               | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) <br> ![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) <br> ![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white) | |||
 
 
 
