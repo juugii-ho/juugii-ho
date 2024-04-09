@@ -19,7 +19,9 @@ Here are some ideas to get you started:
 # 안녕하세요! 👋
 
 > 갈림길인 줄 알았는데 알고보니 직진!
-> 
+>
+
+<img src="https://github.com/juugii-ho/juugii-ho/blob/main/KakaoTalk_Photo_2024-04-08-23-14-12.jpeg?raw=true"/>
 
 <br> <br>
 
