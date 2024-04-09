@@ -81,7 +81,7 @@ Here are some ideas to get you started:
 ## KDT 팀 프로젝트
 | 1-2주차 Python 개인 프로젝트 - PyPod|3-4주차 Pandas 팀 프로젝트 - My Anime List Data Set 시각화|
 |:---:|:---:|
-| <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/screenshot.png" width="600" height="350"/></a> | <a href="https://github.com/juugii-ho/Pandas_Matlab_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image.jpg?raw=true" width="600" height="350"  /></a> |
+| <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/screenshot.png" width="720" height="480"/></a> | <a href="https://github.com/juugii-ho/Pandas_Matlab_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image.jpg?raw=true" width="720" height="480"  /></a> |
 
 | 
 |
