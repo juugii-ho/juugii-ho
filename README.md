@@ -60,7 +60,6 @@ Here are some ideas to get you started:
 --->
 
 
-- 로고 클릭 시 레포지터리로 이동
   
 |     1-2주차       |     3-4주차       |        5주차        |     6주차       |     7주차       |         8주차           |             9-10주차                |
 |:----------------:|:----------------:|:-------------------:|:----------------:|:----------------:|:------------------------:|:-----------------------------------:|
@@ -69,6 +68,7 @@ Here are some ideas to get you started:
 |          11주차          |           12주차         |     13주차        |14주|     15주차            |   16주차       | 17주차~         |
 | Deep Learning          | CV(+CNN)                       | 자연어 처리(+RNN)        | 웹 기초                                                                            | 웹 활용               | AWS 클라우드 | 기업 프로젝트  |
 | [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://github.com/juugii-ho/Deep-Learning) | [![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)](https://github.com/juugii-ho/Deep-Learning) |                                                               | [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/juugii-ho/SERVICE_ML) <br> [![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)](https://github.com/juugii-ho/SERVICE_ML) <br> [![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)](https://github.com/juugii-ho/SERVICE_ML) | |||
+- 로고 클릭 시 레포지터리로 이동
 
 
 
