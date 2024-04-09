@@ -81,7 +81,7 @@ Here are some ideas to get you started:
 ## KDT 팀 프로젝트
 |1-2주차| Python | 개인프로젝트|
 |:---:|:---:|:---:|
-|<td colspan="3">123|
+|<td colspan="3">1|1
 |**3-4주차**| **Python** | **개인프로젝트** |
 |123|
 
