@@ -24,5 +24,7 @@ Here are some ideas to get you started:
 
 https://velog-readme-stats.vercel.app/api/redirect?name=bbalgang&tag=github
 
+https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
+
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
