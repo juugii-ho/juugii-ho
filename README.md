@@ -84,15 +84,15 @@ Here are some ideas to get you started:
 | <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/screenshot.png" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/Pandas_Matlab_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image.jpg?raw=true" width="720" height="380"  /></a> |
 | **5주차 공공데이터 팀 프로제트 - 대구 개발자 연봉을 디버깅하다** | **7주차 크롤링 팀 프로젝트 - 생산형 AI의 현황과 영향**|
 | <a href="https://github.com/juugii-ho/PublicData_team4"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-2.jpg?raw=true" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/KDT-Crawling"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-3.jpg?raw=true" width="720" height="380"  /></a> |
-| 5주차 공공데이터 팀 프로제트 - 대구 개발자 연봉을 디버깅하다 | 7주차 크롤링 팀 프로젝트 - 생산형 AI의 현황과 영향|
-| <a href=""><img src="" width="720" height="380"/></a> | <a href=""><img src="" width="720" height="380"  /></a> |
+| **8주차 통계&Numpy - 대한미국의 기온과 이상현상으로 보는 기후** | **9-10주차 크롤링 팀 프로젝트 - BATTLE GROUND 1위 확률 예측 모델**|
+| <a href="https://github.com/juugii-ho/KDT5_Numpy_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-4.jpg?raw=true" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/KDT-mini_project_ML"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-5.jpg?raw=true" width="720" height="380"  /></a> |
 
 
 
 
 
 
-<br> <br>
+<br> <br
 
 
 
