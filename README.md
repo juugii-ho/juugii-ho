@@ -16,20 +16,6 @@ Here are some ideas to get you started:
 -->
 
 
-![이미지 설명](https://github.com/juugii-ho/juugii-ho/blob/main/KakaoTalk_Photo_2024-04-08-23-14-12.jpeg?raw=true)
-
-<div style="display: flex; flex-direction: column; width: 300px; margin-left: 20px;">
-  <ul>
-    <li>갈림길인 줄 알았는데 알고보니 직진!</li>
-    <li>다음 목표는 무엇일까요?</li>
-  </ul>
-</div>
-
-
-
-
-
-
 <img src="https://github.com/juugii-ho/juugii-ho/blob/main/KakaoTalk_Photo_2024-04-08-23-14-12.jpeg?raw=true" height="300" width="300"/>
 
 # 안녕하세요! 이시명입니다. 👋
