@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<img src="https://github.com/juugii-ho/juugii-ho/blob/main/KakaoTalk_Photo_2024-04-08-23-14-12.jpeg?raw=true" height="400" width="400"/>
+<img src="https://github.com/juugii-ho/juugii-ho/blob/main/KakaoTalk_Photo_2024-04-08-23-14-12.jpeg?raw=true" height="300" width="300"/>
 
 # 안녕하세요! 👋
 
