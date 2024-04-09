@@ -81,7 +81,7 @@ Here are some ideas to get you started:
 ## KDT 팀 프로젝트
 ### 1-2주차 Python 개인프로젝트
 #### PyPod
- <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/스크린샷%202024-04-09%20오후%203.17.03.png?raw=true"/></a>
+ <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/스크린샷%202024-04-09%20오후%203.17.03.png" width=800 height=500/></a>
 
 
 
