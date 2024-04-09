@@ -1,4 +1,4 @@
-<img src="https://github.com/juugii-ho/juugii-ho/blob/main/header.png?raw=true&section=header" />
+<img src="https://github.com/juugii-ho/juugii-ho/blob/main/header.png?raw=true&size=200&section=header" />
 
 <!--
 **juugii-ho/juugii-ho** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
