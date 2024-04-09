@@ -17,7 +17,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=bbalgang)](https://velog.io/@bbalgang) 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=juugii-ho)](https://github.com/anuraghazra/github-readme-stats)
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=juugii-ho)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -30,7 +29,7 @@ https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoCol
 |------|---|
 |![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)|https://github.com/juugii-ho|
 |![GMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)|holicalday@gmail.com|
-|https://velog-readme-stats.vercel.app/api/redirect?name=bbalgang&tag=github|https://velog.io/@bbalgang|
+|[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=bbalgang)](https://velog.io/@bbalgang) |https://velog.io/@bbalgang|
 
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
