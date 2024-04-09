@@ -81,11 +81,11 @@ Here are some ideas to get you started:
 ## KDT 팀 프로젝트
 | 1-2주차 Python 개인 프로젝트 - PyPod|3-4주차 Pandas 팀 프로젝트 - My Anime List Data Set 시각화|
 |:---:|:---:|
-| <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/screenshot.png" width="720" height="360"/></a> | <a href="https://github.com/juugii-ho/Pandas_Matlab_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image.jpg?raw=true" width="720" height="360"  /></a> |
+| <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/screenshot.png" width="720" height="400"/></a> | <a href="https://github.com/juugii-ho/Pandas_Matlab_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image.jpg?raw=true" width="720" height="400"  /></a> |
 | **5주차 공공데이터 팀 프로제트 - 대구 개발자 연봉을 디버깅하다** | **7주차 크롤링 팀 프로젝트 - 생산형 AI의 현황과 영향**|
-| <a href="https://github.com/juugii-ho/PublicData_team4"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-2.jpg?raw=true" width="720" height="360"/></a> | <a href="https://github.com/juugii-ho/KDT-Crawling"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-3.jpg?raw=true" width="720" height="360"  /></a> |
+| <a href="https://github.com/juugii-ho/PublicData_team4"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-2.jpg?raw=true" width="720" height="400"/></a> | <a href="https://github.com/juugii-ho/KDT-Crawling"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-3.jpg?raw=true" width="720" height="400"  /></a> |
 | 5주차 공공데이터 팀 프로제트 - 대구 개발자 연봉을 디버깅하다 | 7주차 크롤링 팀 프로젝트 - 생산형 AI의 현황과 영향|
-| <a href=""><img src="" width="720" height="360"/></a> | <a href=""><img src="" width="720" height="360"  /></a> |
+| <a href=""><img src="" width="720" height="400"/></a> | <a href=""><img src="" width="720" height="400"  /></a> |
 
 
 
