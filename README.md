@@ -53,8 +53,9 @@ Here are some ideas to get you started:
 |9주차|CV|![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)|
 |10주차|자연어 처리||
 |11주차|웹 기초|![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)|
-|12주차|Pyhon||
-|13주차|Pyhon||
+|12주차|웹 활용||
+|13주차|AWS 클라우드||
+|14주차~|기업 프로젝트||
 
 
 
