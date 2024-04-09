@@ -37,7 +37,7 @@ Here are some ideas to get you started:
 
 
 
- <a href="https://datainstitute.knu.ac.kr/contents/bbs/selectBbsList.do?menuId=348&searchBbsinfo_tcd=14&searchBbscate_tcd=4"><img src="https://datainstitute.knu.ac.kr/images/web/logo.svg&link=https://datainstitute.knu.ac.kr/contents/bbs/selectBbsList.do?menuId=348&searchBbsinfo_tcd=14&searchBbscate_tcd=4"/></a>
+ <a href="https://datainstitute.knu.ac.kr/contents/bbs/selectBbsList.do?menuId=348&searchBbsinfo_tcd=14&searchBbscate_tcd=4"><img src="https://datainstitute.knu.ac.kr/images/web/logo.svg"/></a>
 
 
 
