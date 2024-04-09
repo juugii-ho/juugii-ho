@@ -81,17 +81,17 @@ Here are some ideas to get you started:
 ## KDT 팀 프로젝트
 | 1-2주차 Python 개인 프로젝트 <br> PyPod|3-4주차 Pandas 팀 프로젝트 <br> My Anime List Data Set 시각화|
 |:---:|:---:|
-| <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/screenshot.png" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/Pandas_Matlab_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image.jpg?raw=true" width="720" height="380"  /></a> |
+| <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/screenshot.png" width="720" height="360"/></a> | <a href="https://github.com/juugii-ho/Pandas_Matlab_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image.jpg?raw=true" width="720" height="360"  /></a> |
 | **5주차 공공데이터 팀 프로제트 <br> 대구 개발자 연봉을 디버깅하다** | **7주차 크롤링 팀 프로젝트 <br> 생산형 AI의 현황과 영향**|
-| <a href="https://github.com/juugii-ho/PublicData_team4"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-2.jpg?raw=true" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/KDT-Crawling"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-3.jpg?raw=true" width="720" height="380"  /></a> |
+| <a href="https://github.com/juugii-ho/PublicData_team4"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-2.jpg?raw=true" width="720" height="360"/></a> | <a href="https://github.com/juugii-ho/KDT-Crawling"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-3.jpg?raw=true" width="720" height="360"  /></a> |
 | **8주차 통계&Numpy 팀 프로젝트 <br> 대한미국의 기온과 이상현상으로 보는 기후** | **9-10주차 크롤링 팀 프로젝트 <br> BATTLE GROUND 1위 확률 예측 모델**|
-| <a href="https://github.com/juugii-ho/KDT5_Numpy_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-4.jpg?raw=true" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/KDT-mini_project_ML"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-5.jpg?raw=true" width="720" height="380"  /></a> |
+| <a href="https://github.com/juugii-ho/KDT5_Numpy_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-4.jpg?raw=true" width="720" height="360"/></a> | <a href="https://github.com/juugii-ho/KDT-mini_project_ML"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-5.jpg?raw=true" width="720" height="360"  /></a> |
 | **11-12주차 딥러닝 팀 프로젝트 <br> 표정 인식 딥러닝 모델 개발을 통한 딥러닝 분석** | **13주차 OPENCV 팀 프로젝트 <br> 운송수단 다중 분류**|
-| <a href="https://github.com/juugii-ho/DeepLearning"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-6.jpg?raw=true" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/CV-TP-4Team"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-7.jpg?raw=true" width="720" height="380"  /></a> |
+| <a href="https://github.com/juugii-ho/DeepLearning"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-6.jpg?raw=true" width="720" height="360"/></a> | <a href="https://github.com/juugii-ho/CV-TP-4Team"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-7.jpg?raw=true" width="720" height="360"  /></a> |
 | **14주차 자연어 처리 팀 프로젝트 <br> 조선왕조실록 자연어 분석** | **15주차 웹 기초 팀 프로젝트 <br> 진행 중**|
-| <a href="https://github.com/juugii-ho/KDT5_NLP_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-8.jpg?raw=true" width="720" height="380"/></a> | 진행중|
+| <a href="https://github.com/juugii-ho/KDT5_NLP_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-8.jpg?raw=true" width="720" height="360"/></a> | 진행중|
 
-<!---<a href="https://github.com/juugii-ho/CV-TP-4Team"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-7.jpg?raw=true" width="720" height="380"  /></a> |
+<!---<a href="https://github.com/juugii-ho/CV-TP-4Team"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-7.jpg?raw=true" width="720" height="360"  /></a> |
 --->
 
 
