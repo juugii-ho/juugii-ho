@@ -21,13 +21,13 @@ Here are some ideas to get you started:
 > 갈림길인 줄 알았는데 알고보니 직진!
 > 
 
-![KakaoTalk_Photo_2024-04-08-23-14-12.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/b1dd8bb7-a874-47fd-8d9e-f61b2721cb53/501c26b5-6478-453e-a21f-9e3472a64d6f/KakaoTalk_Photo_2024-04-08-23-14-12.jpeg)
+
 
 **🎂 Birth**
 
 *1989.11.25*
 
-**✉️ E-Mail**
+**✉️ E-Mail** <a href="mailto:holicalday@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=holicalday@gmail.com"/></a>
 
 holicalday@gmail.com
 
@@ -37,12 +37,11 @@ holicalday@gmail.com
 
 💾 **Tech Blog**
 
-*[velog.io/@bbalgang](http://velog.io/@bbalgang)*
+*[velog.io/@bbalgang](http://velog.io/@bbalgang)* [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=bbalgang)](https://velog.io/@bbalgang)
 
 
-<a href="mailto:holicalday@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=holicalday@gmail.com"/></a>
 
-[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=bbalgang)](https://velog.io/@bbalgang)
+
 
  <a href="https://www.notion.so/d40d7194fc43475a8395d9cb85898c77?pvs=4"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white&link=https://www.notion.so/d40d7194fc43475a8395d9cb85898c77?pvs=4"/></a>
 
