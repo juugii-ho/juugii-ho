@@ -22,16 +22,15 @@ Here are some ideas to get you started:
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=juugii-ho)](https://github.com/anuraghazra/github-readme-stats)
 
 
-https://velog-readme-stats.vercel.app/api/redirect?name=bbalgang&tag=github
 
 https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
 
 
 |이름|내용|
 |------|---|
-|![GMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)|holicalday@gmail.com|
 |![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)|https://github.com/juugii-ho|
-
+|![GMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)|holicalday@gmail.com|
+|https://velog-readme-stats.vercel.app/api/redirect?name=bbalgang&tag=github|https://velog.io/@bbalgang|
 
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
