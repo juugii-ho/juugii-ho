@@ -1,8 +1,5 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
 
-
-### Hi there 👋
-
 <!--
 **juugii-ho/juugii-ho** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -19,7 +16,28 @@ Here are some ideas to get you started:
 -->
 
 
+# 안녕하세요 👋
 
+> 갈림길인 줄 알았는데 알고보니 직진!
+> 
+
+![KakaoTalk_Photo_2024-04-08-23-14-12.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/b1dd8bb7-a874-47fd-8d9e-f61b2721cb53/501c26b5-6478-453e-a21f-9e3472a64d6f/KakaoTalk_Photo_2024-04-08-23-14-12.jpeg)
+
+**🎂 Birth**
+
+*1989.11.25*
+
+**✉️ E-Mail**
+
+holicalday@gmail.com
+
+🐱 **Github**
+
+*[github.com/juugii-ho](http://github.com/juugii-ho)*
+
+💾 **Tech Blog**
+
+*[velog.io/@bbalgang](http://velog.io/@bbalgang)*
 
 
 <a href="mailto:holicalday@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=holicalday@gmail.com"/></a>
