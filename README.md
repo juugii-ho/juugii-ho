@@ -21,11 +21,6 @@ Here are some ideas to get you started:
 
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=juugii-ho)](https://github.com/anuraghazra/github-readme-stats)
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=juugii-ho)](https://github.com/anuraghazra/github-readme-stats)
-
-
 
 <a href="mailto:holicalday@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=holicalday@gmail.com"/></a>
 
@@ -38,6 +33,8 @@ Here are some ideas to get you started:
 
 
  <a href="https://datainstitute.knu.ac.kr/contents/page/selectPageNomalView.do?menuId=334&selectedId=2&"><img src="https://datainstitute.knu.ac.kr/images/web/logo.svg"/></a>
+
+ <a href="https://datainstitute.knu.ac.kr/contents/page/selectPageNomalView.do?menuId=334&selectedId=2&"><img src="https://datainstitute.knu.ac.kr/uploads/ckeditor/62731550473920698.png"/></a>
 
 
 |Week|Subject|Badge|
@@ -62,6 +59,11 @@ Here are some ideas to get you started:
 
 
 
+
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=juugii-ho)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=juugii-ho)](https://github.com/anuraghazra/github-readme-stats)
 
 
 
