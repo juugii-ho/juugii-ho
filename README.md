@@ -27,17 +27,13 @@ Here are some ideas to get you started:
 
 *1989.11.25*
 
-**✉️ <a href="mailto:holicalday@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=holicalday@gmail.com"/></a>
-** 
-holicalday@gmail.com
+✉️ <a href="mailto:holicalday@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=holicalday@gmail.com"/></a>
 
 🐱 **Github**
 
 *[github.com/juugii-ho](http://github.com/juugii-ho)*
 
-💾 **[velog.io/@bbalgang](http://velog.io/@bbalgang)* [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=bbalgang)](https://velog.io/@bbalgang)**
-
-*
+💾 ![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=bbalgang)](https://velog.io/@bbalgang)
 
 
 
