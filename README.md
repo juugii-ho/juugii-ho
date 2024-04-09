@@ -71,7 +71,7 @@ Here are some ideas to get you started:
 | Python         | Pandas         | 공공데이터        | SQL            | 크롤링         | 통계&Numpy         | Machine Learning              |
 | [![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/juugii-ho/Python) | [![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://github.com/juugii-ho/EXAM_PANDAS_MATPLOT) <br> [![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)](https://github.com/juugii-ho/EXAM_PANDAS_MATPLOT)|  | [![mysql](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://github.com/juugii-ho/SQL-Scripts) | [![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://github.com/juugii-ho/Crawling) | [![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)](https://github.com/juugii-ho/Numpy) <br> [![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)](https://github.com/juugii-ho/Numpy) | [![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://github.com/juugii-ho?tab=repositories) |
 |     **11~12주차**     |     **13주차**    |  **14주차**    |**15주차**|  **16주차**      | **17주차**   | **18주차~**    |
-| Deep Learning          | CV(+CNN)                       | 자연어 처리(+RNN)        | 웹 기초                                                                            | 웹 활용               | AWS 클라우드 | 기업 프로젝트  |
+| Deep Learning          | OPEN CV(+CNN)                       | 자연어 처리(+RNN)        | 웹 기초                                    | 웹 활용               | AWS 클라우드 | 기업 프로젝트  |
 | [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://github.com/juugii-ho/Deep-Learning) | [![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)](https://github.com/juugii-ho/Deep-Learning) |                                                               | [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/juugii-ho/SERVICE_ML) <br> [![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)](https://github.com/juugii-ho/SERVICE_ML) <br> [![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)](https://github.com/juugii-ho/SERVICE_ML) | |||
 - 로고 클릭 시 레포지터리로 이동
 
@@ -84,15 +84,17 @@ Here are some ideas to get you started:
 | <a href="https://velog.io/@bbalgang/19-개인프로젝트"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/screenshot.png" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/Pandas_Matlab_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image.jpg?raw=true" width="720" height="380"  /></a> |
 | **5주차 공공데이터 팀 프로제트 - 대구 개발자 연봉을 디버깅하다** | **7주차 크롤링 팀 프로젝트 - 생산형 AI의 현황과 영향**|
 | <a href="https://github.com/juugii-ho/PublicData_team4"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-2.jpg?raw=true" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/KDT-Crawling"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-3.jpg?raw=true" width="720" height="380"  /></a> |
-| **8주차 통계&Numpy - 대한미국의 기온과 이상현상으로 보는 기후** | **9-10주차 크롤링 팀 프로젝트 - BATTLE GROUND 1위 확률 예측 모델**|
+| **8주차 통계&Numpy 팀 프로젝트 - 대한미국의 기온과 이상현상으로 보는 기후** | **9-10주차 크롤링 팀 프로젝트 - BATTLE GROUND 1위 확률 예측 모델**|
 | <a href="https://github.com/juugii-ho/KDT5_Numpy_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-4.jpg?raw=true" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/KDT-mini_project_ML"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-5.jpg?raw=true" width="720" height="380"  /></a> |
+| **11-12주차 딥러닝 팀 프로젝트 - 표정 인식 딥러닝 모델 개발을 통한 딥러닝 분석** | **13주차 OPENCV 팀 프로젝트 - 운송수단 다중 분류**|
+| <a href="https://github.com/juugii-ho/DeepLearning"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-6.jpg?raw=true" width="720" height="380"/></a> | <a href="https://github.com/juugii-ho/CV-TP-4Team"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-7.jpg?raw=true" width="720" height="380"  /></a> |
 
 
 
 
 
 
-<br> <br
+<br> <br>
 
 
 
