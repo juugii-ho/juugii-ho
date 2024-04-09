@@ -41,7 +41,7 @@ Here are some ideas to get you started:
 
 
 |Week|Subject|
-|---|---|
+|:---:|:---|
 |1주차|![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)|
 |2주차|![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)|
 |3주차|![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)|
@@ -52,9 +52,7 @@ Here are some ideas to get you started:
 |8주차|![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)|
 |9주차|![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)|
 |10주차|자연어처리|
-|11주차|![html](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
-![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
-![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)|
+|11주차|![html](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)|
 |12주차||
 |13주차||
 
