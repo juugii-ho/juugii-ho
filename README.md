@@ -1,5 +1,4 @@
-<img src="[https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150](https://github.com/juugii-ho/juugii-ho/blob/main/header.png?raw=true)![Uploading image.png…]()
-&section=header" />
+<img src="https://github.com/juugii-ho/juugii-ho/blob/main/header.png?raw=true&section=header" />
 
 <!--
 **juugii-ho/juugii-ho** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
