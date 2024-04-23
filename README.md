@@ -31,7 +31,9 @@ Here are some ideas to get you started:
 - 새로운 필드에서 배우는 것에 주저함이 없어요.
 
 <a href="mailto:holicalday@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=holicalday@gmail.com"/></a> <a href="https://www.notion.so/d40d7194fc43475a8395d9cb85898c77?pvs=4"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white&link=https://www.notion.so/d40d7194fc43475a8395d9cb85898c77?pvs=4"/></a>[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=bbalgang)](https://velog.io/@bbalgang) <br>
+<!---
 ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+--->
 
 
 
