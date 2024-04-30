@@ -93,14 +93,15 @@ Here are some ideas to get you started:
 | <a href="https://github.com/juugii-ho/DeepLearning"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-6.jpg?raw=true" width="720" height="340"/></a> | <a href="https://github.com/juugii-ho/CV-TP-4Team"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-7.jpg?raw=true" width="720" height="340"  /></a> |
 | **14주차 자연어 처리 팀 프로젝트 <br> 조선왕조실록 자연어 분석** | **15주차 웹 기초 팀 프로젝트 <br> More than K-POP**|
 | <a href="https://github.com/juugii-ho/KDT5_NLP_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-8.jpg?raw=true" width="720" height="340"/></a> | <a href="https://github.com/juugii-ho/service_ml_TP"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/KPOP.jpg" width="720" height="340"/></a> |
-| **16주차 웹 활용 팀 프로젝트 <br> Natural Discovery** | **17주차 AWS 팀 프로젝트 <br> 진행 중**|
-|<a href="https://github.com/juugii-ho/KDT_15W_Project_KDT05_FLASK_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-9.jpg" width="720" height="340"/></a>||
+| **16주차 웹 활용 팀 프로젝트 <br> Natural Discovery** | **17주차 AWS 개인 프로젝트 <br> META CHART*********|
+|<a href="https://github.com/juugii-ho/KDT_15W_Project_KDT05_FLASK_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-9.jpg" width="720" height="340"/></a>|
+<a href="https://github.com/juugii-ho/KDT_16_Private_Project"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/metachart.jpg" width="720" height="340"/></a>|
 
 
 <!---<a href="https://github.com/juugii-ho/CV-TP-4Team"><img src="https://github.com/juugii-ho/juugii-ho/blob/main/image-7.jpg?raw=true" width="720" height="340"  /></a> |
 --->
 
-
+metachart.jpg
 
 
 
