@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+            <style>
         .calendar-container {
             width: 100%;
-            max-width: 400px; /* 최대 너비 설정 */
-            min-width: 280px; /* 최소 너비 설정 */
+            max-width: 400px;
+            min-width: 70px; /* 280px에서 70px로 변경 */
             background: #8B5CF6;
             color: white;
-            padding: 1.25rem; /* 20px를 rem으로 변환 */
+            padding: clamp(0.3rem, 1vw, 1.25rem); /* 패딩을 반응형으로 조정 */
             border-radius: 10px;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             margin: auto;
@@ -20,25 +20,31 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1.25rem;
+            margin-bottom: clamp(0.3rem, 1vw, 1.25rem);
         }
 
         .year-month {
-            font-size: clamp(1.2rem, 3vw, 1.5rem); /* 반응형 폰트 크기 */
+            font-size: clamp(0.7rem, 2vw, 1.5rem); /* 최소 폰트 크기 축소 */
             font-weight: bold;
+            
+        }
+        
+        .year {
+            font-size: clamp(0.7rem, 2vw, 1.5rem); /* 연도 폰트 크기 추가 */
         }
 
+                
         .calendar-grid {
+            gap: clamp(0.1rem, 0.5vw, 0.5rem); /* 그리드 간격 조정 */
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            gap: 0.5rem;
             text-align: center;
         }
 
         .weekday {
-            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            font-size: clamp(0.5rem, 1.5vw, 0.875rem); /* 최소 폰트 크기 축소 */
             color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 0.625rem;
+            margin-bottom: clamp(0.2rem, 1vw, 0.625rem);
         }
 
         .day {
@@ -50,7 +56,7 @@
             cursor: pointer;
             margin: auto;
             width: 100%;
-            font-size: clamp(0.75rem, 2vw, 1rem);
+            font-size: clamp(0.5rem, 1.5vw, 1rem); /* 최소 폰트 크기 축소 */
             position: relative;
         }
 
@@ -72,19 +78,19 @@
         }
 
         .current-date {
-            font-size: clamp(0.75rem, 2vw, 0.875rem);
-            margin-top: 1.25rem;
+            font-size: clamp(0.5rem, 1.5vw, 0.875rem); /* 최소 폰트 크기 축소 */
+            margin-top: clamp(0.3rem, 1vw, 1.25rem);
             text-align: left;
             color: rgba(255, 255, 255, 0.8);
         }
 
         .nav-button {
+            font-size: clamp(0.7rem, 2vw, 1.25rem); /* 네비게이션 버튼 크기 조정 */
+            padding: clamp(0.1rem, 0.5vw, 0.3125rem) clamp(0.2rem, 0.7vw, 0.625rem);
             background: none;
             border: none;
             color: white;
-            font-size: clamp(1rem, 3vw, 1.25rem);
             cursor: pointer;
-            padding: 0.3125rem 0.625rem;
         }
 
         .nav-button:hover {
