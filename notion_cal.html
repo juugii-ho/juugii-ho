@@ -1,121 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Purple Monthly Calendar</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .calendar {
-      width: 100%;
-      max-width: 400px;
-      background-color: #6a0dad;
-      color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-    .calendar-header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .calendar-header h2 {
-      margin: 0;
-      font-size: 24px;
-      letter-spacing: 1px;
-    }
-    .days {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 10px;
-      text-align: center;
-    }
-    .day-name {
-      font-weight: bold;
-      padding: 10px 0;
-    }
-    .date {
-      background-color: #b19cd9;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .date:hover {
-      background-color: #9370db;
-    }
-    .today {
-      background-color: #ffccff;
-      color: #6a0dad;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <style>
+        .calendar-container {
+            width: 300px;
+            background: #8B5CF6;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .year-month {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+
+        .weekday {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 10px;
+        }
+
+        .day {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: auto;
+        }
+
+        .day:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .today {
+            background: white;
+            color: #8B5CF6;
+        }
+
+        .other-month {
+            opacity: 0.5;
+        }
+
+        .current-date {
+            font-size: 14px;
+            margin-top: 20px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .nav-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-  <div class="calendar">
-    <div class="calendar-header">
-      <h2 id="monthYear"></h2>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <span class="year">2024</span>
+            <div class="year-month">December</div>
+            <div class="navigation">
+                <button class="nav-button prev-month">←</button>
+                <button class="nav-button next-month">→</button>
+            </div>
+        </div>
+        <div class="calendar-grid">
+            <!-- Weekdays -->
+            <div class="weekday">일</div>
+            <div class="weekday">월</div>
+            <div class="weekday">화</div>
+            <div class="weekday">수</div>
+            <div class="weekday">목</div>
+            <div class="weekday">금</div>
+            <div class="weekday">토</div>
+        </div>
+        <div class="current-date"></div>
     </div>
-    <div class="days">
-      <div class="day-name">Sun</div>
-      <div class="day-name">Mon</div>
-      <div class="day-name">Tue</div>
-      <div class="day-name">Wed</div>
-      <div class="day-name">Thu</div>
-      <div class="day-name">Fri</div>
-      <div class="day-name">Sat</div>
-      <div id="dates"></div>
-    </div>
-  </div>
 
-  <script>
-    const monthNames = [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
-    ];
+    <script>
+        class Calendar {
+            constructor() {
+                this.date = new Date();
+                this.currentYear = this.date.getFullYear();
+                this.currentMonth = this.date.getMonth();
+                
+                this.prevMonthBtn = document.querySelector('.prev-month');
+                this.nextMonthBtn = document.querySelector('.next-month');
+                
+                this.bindEvents();
+                this.renderCalendar();
+            }
 
-    const now = new Date();
-    const currentMonth = now.getMonth();
-    const currentYear = now.getFullYear();
-    const today = now.getDate();
+            bindEvents() {
+                this.prevMonthBtn.addEventListener('click', () => {
+                    this.currentMonth--;
+                    if (this.currentMonth < 0) {
+                        this.currentMonth = 11;
+                        this.currentYear--;
+                    }
+                    this.renderCalendar();
+                });
 
-    function renderCalendar(month, year) {
-      const firstDay = new Date(year, month, 1).getDay();
-      const lastDate = new Date(year, month + 1, 0).getDate();
+                this.nextMonthBtn.addEventListener('click', () => {
+                    this.currentMonth++;
+                    if (this.currentMonth > 11) {
+                        this.currentMonth = 0;
+                        this.currentYear++;
+                    }
+                    this.renderCalendar();
+                });
+            }
 
-      const datesContainer = document.getElementById('dates');
-      const monthYearText = document.getElementById('monthYear');
-      datesContainer.innerHTML = '';
-      monthYearText.textContent = `${monthNames[month]} ${year}`;
-
-      // Fill in the blanks for the days before the 1st
-      for (let i = 0; i < firstDay; i++) {
-        const blankDiv = document.createElement('div');
-        blankDiv.classList.add('date');
-        blankDiv.style.visibility = 'hidden';
-        datesContainer.appendChild(blankDiv);
-      }
-
-      // Fill in the dates for the current month
-      for (let date = 1; date <= lastDate; date++) {
-        const dateDiv = document.createElement('div');
-        dateDiv.textContent = date;
-        dateDiv.classList.add('date');
-        if (date === today && month === currentMonth && year === currentYear) {
-          dateDiv.classList.add('today');
+            renderCalendar() {
+                const firstDay = new Date(this.currentYear, this.currentMonth, 1);
+                const lastDay = new Date(this.currentYear, this.currentMonth + 1, 0);
+                const startingDay = firstDay.getDay();
+                const monthLength = lastDay.getDate();
+                
+                document.querySelector('.year').textContent = this.currentYear;
+                document.querySelector('.year-month').textContent = new Date(this.currentYear, this.currentMonth).toLocaleString('ko-KR', { month: 'long' });
+                
+                const calendarGrid = document.querySelector('.calendar-grid');
+                const weekdaysHtml = Array.from({ length: 7 }, (_, i) => 
+                    `<div class="weekday">${'일월화수목금토'[i]}</div>`
+                ).join('');
+                
+                let daysHtml = weekdaysHtml;
+                
+                // Previous month's days
+                const prevMonthLength = new Date(this.currentYear, this.currentMonth, 0).getDate();
+                for (let i = startingDay - 1; i >= 0; i--) {
+                    daysHtml += `<div class="day other-month">${prevMonthLength - i}</div>`;
+                }
+                
+                // Current month's days
+                const today = new Date();
+                for (let i = 1; i <= monthLength; i++) {
+                    const isToday = today.getDate() === i && 
+                                  today.getMonth() === this.currentMonth && 
+                                  today.getFullYear() === this.currentYear;
+                    
+                    daysHtml += `<div class="day ${isToday ? 'today' : ''}">${i}</div>`;
+                }
+                
+                // Next month's days
+                const remainingDays = 42 - (startingDay + monthLength);
+                for (let i = 1; i <= remainingDays; i++) {
+                    daysHtml += `<div class="day other-month">${i}</div>`;
+                }
+                
+                calendarGrid.innerHTML = daysHtml;
+                
+                // Update current date
+                document.querySelector('.current-date').textContent = 
+                    new Date().toLocaleDateString('ko-KR', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric', 
+                        weekday: 'long' 
+                    });
+            }
         }
-        datesContainer.appendChild(dateDiv);
-      }
-    }
 
-    // Render current month and year
-    renderCalendar(currentMonth, currentYear);
-  </script>
+        new Calendar();
+    </script>
 </body>
 </html>
