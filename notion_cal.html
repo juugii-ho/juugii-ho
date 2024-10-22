@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Monthly Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .calendar {
+      width: 100%;
+      max-width: 400px;
+      background-color: #6a0dad;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .calendar-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .calendar-header h2 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+    .day-name {
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    .date {
+      background-color: #b19cd9;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .date:hover {
+      background-color: #9370db;
+    }
+    .today {
+      background-color: #ffccff;
+      color: #6a0dad;
+    }
+  </style>
+</head>
+<body>
+  <div class="calendar">
+    <div class="calendar-header">
+      <h2 id="monthYear"></h2>
+    </div>
+    <div class="days">
+      <div class="day-name">Sun</div>
+      <div class="day-name">Mon</div>
+      <div class="day-name">Tue</div>
+      <div class="day-name">Wed</div>
+      <div class="day-name">Thu</div>
+      <div class="day-name">Fri</div>
+      <div class="day-name">Sat</div>
+      <div id="dates"></div>
+    </div>
+  </div>
+
+  <script>
+    const monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    const now = new Date();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+    const today = now.getDate();
+
+    function renderCalendar(month, year) {
+      const firstDay = new Date(year, month, 1).getDay();
+      const lastDate = new Date(year, month + 1, 0).getDate();
+
+      const datesContainer = document.getElementById('dates');
+      const monthYearText = document.getElementById('monthYear');
+      datesContainer.innerHTML = '';
+      monthYearText.textContent = `${monthNames[month]} ${year}`;
+
+      // Fill in the blanks for the days before the 1st
+      for (let i = 0; i < firstDay; i++) {
+        const blankDiv = document.createElement('div');
+        blankDiv.classList.add('date');
+        blankDiv.style.visibility = 'hidden';
+        datesContainer.appendChild(blankDiv);
+      }
+
+      // Fill in the dates for the current month
+      for (let date = 1; date <= lastDate; date++) {
+        const dateDiv = document.createElement('div');
+        dateDiv.textContent = date;
+        dateDiv.classList.add('date');
+        if (date === today && month === currentMonth && year === currentYear) {
+          dateDiv.classList.add('today');
+        }
+        datesContainer.appendChild(dateDiv);
+      }
+    }
+
+    // Render current month and year
+    renderCalendar(currentMonth, currentYear);
+  </script>
+</body>
+</html>
