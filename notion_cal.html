@@ -37,6 +37,10 @@
             margin-bottom: 10px;
         }
 
+        .weekend-header {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
         .day {
             width: 30px;
             height: 30px;
@@ -46,15 +50,26 @@
             border-radius: 50%;
             cursor: pointer;
             margin: auto;
+            position: relative;
         }
 
         .day:hover {
             background: rgba(255, 255, 255, 0.2);
         }
 
+        .weekend {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
         .today {
             background: white;
             color: #8B5CF6;
+        }
+
+        .today.weekend {
+            background: white;
+            color: #8B5CF6;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
         }
 
         .other-month {
@@ -95,13 +110,13 @@
         </div>
         <div class="calendar-grid">
             <!-- Weekdays -->
-            <div class="weekday">일</div>
+            <div class="weekday weekend-header">일</div>
             <div class="weekday">월</div>
             <div class="weekday">화</div>
             <div class="weekday">수</div>
             <div class="weekday">목</div>
             <div class="weekday">금</div>
-            <div class="weekday">토</div>
+            <div class="weekday weekend-header">토</div>
         </div>
         <div class="current-date"></div>
     </div>
@@ -140,6 +155,10 @@
                 });
             }
 
+            isWeekend(dayIndex) {
+                return dayIndex === 0 || dayIndex === 6;
+            }
+
             renderCalendar() {
                 const firstDay = new Date(this.currentYear, this.currentMonth, 1);
                 const lastDay = new Date(this.currentYear, this.currentMonth + 1, 0);
@@ -151,7 +170,7 @@
                 
                 const calendarGrid = document.querySelector('.calendar-grid');
                 const weekdaysHtml = Array.from({ length: 7 }, (_, i) => 
-                    `<div class="weekday">${'일월화수목금토'[i]}</div>`
+                    `<div class="weekday ${this.isWeekend(i) ? 'weekend-header' : ''}">${'일월화수목금토'[i]}</div>`
                 ).join('');
                 
                 let daysHtml = weekdaysHtml;
@@ -159,23 +178,28 @@
                 // Previous month's days
                 const prevMonthLength = new Date(this.currentYear, this.currentMonth, 0).getDate();
                 for (let i = startingDay - 1; i >= 0; i--) {
-                    daysHtml += `<div class="day other-month">${prevMonthLength - i}</div>`;
+                    const isWeekend = this.isWeekend((startingDay - 1 - i) % 7);
+                    daysHtml += `<div class="day other-month ${isWeekend ? 'weekend' : ''}">${prevMonthLength - i}</div>`;
                 }
                 
                 // Current month's days
                 const today = new Date();
                 for (let i = 1; i <= monthLength; i++) {
+                    const dayIndex = (startingDay + i - 1) % 7;
+                    const isWeekend = this.isWeekend(dayIndex);
                     const isToday = today.getDate() === i && 
                                   today.getMonth() === this.currentMonth && 
                                   today.getFullYear() === this.currentYear;
                     
-                    daysHtml += `<div class="day ${isToday ? 'today' : ''}">${i}</div>`;
+                    daysHtml += `<div class="day ${isToday ? 'today' : ''} ${isWeekend ? 'weekend' : ''}">${i}</div>`;
                 }
                 
                 // Next month's days
                 const remainingDays = 42 - (startingDay + monthLength);
                 for (let i = 1; i <= remainingDays; i++) {
-                    daysHtml += `<div class="day other-month">${i}</div>`;
+                    const dayIndex = (startingDay + monthLength + i - 1) % 7;
+                    const isWeekend = this.isWeekend(dayIndex);
+                    daysHtml += `<div class="day other-month ${isWeekend ? 'weekend' : ''}">${i}</div>`;
                 }
                 
                 calendarGrid.innerHTML = daysHtml;
