@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-clock {
+            background: rgba(139, 92, 246, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .flip-clock-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .flip-unit {
+            position: relative;
+            width: 60px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            font-size: 48px;
+            font-weight: bold;
+            perspective: 400px;
+        }
+
+        .flip-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .flip-card.flip {
+            transform: rotateX(-180deg);
+        }
+
+        .flip-card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .flip-card-back {
+            transform: rotateX(180deg);
+        }
+
+        .colon {
+            font-size: 48px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            animation: blink 1s infinite;
+        }
+
+        .label {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 8px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .flip-card::before,
+        .flip-card::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .flip-card::before {
+            top: 50%;
+        }
+
+        .flip-card::after {
+            bottom: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flip-clock">
+        <div class="flip-clock-container">
+            <div class="flip-unit">
+                <div class="flip-card">
+                    <div class="flip-card-face flip-card-front" id="hours1">00</div>
+                    <div class="flip-card-face flip-card-back">00</div>
+                </div>
+                <div class="label">시</div>
+            </div>
+            <div class="colon">:</div>
+            <div class="flip-unit">
+                <div class="flip-card">
+                    <div class="flip-card-face flip-card-front" id="minutes1">00</div>
+                    <div class="flip-card-face flip-card-back">00</div>
+                </div>
+                <div class="label">분</div>
+            </div>
+            <div class="colon">:</div>
+            <div class="flip-unit">
+                <div class="flip-card">
+                    <div class="flip-card-face flip-card-front" id="seconds1">00</div>
+                    <div class="flip-card-face flip-card-back">00</div>
+                </div>
+                <div class="label">초</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            updateUnit('hours1', hours);
+            updateUnit('minutes1', minutes);
+            updateUnit('seconds1', seconds);
+        }
+
+        function updateUnit(id, value) {
+            const element = document.getElementById(id);
+            if (element.textContent !== value) {
+                element.textContent = value;
+                element.parentElement.classList.add('flip');
+                setTimeout(() => {
+                    element.parentElement.classList.remove('flip');
+                    element.parentElement.querySelector('.flip-card-back').textContent = value;
+                }, 600);
+            }
+        }
+
+        // 초기 실행
+        updateClock();
+        // 1초마다 업데이트
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
