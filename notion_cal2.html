@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .calendar-container {
+            width: 100%;
+            max-width: 400px; /* 최대 너비 설정 */
+            min-width: 280px; /* 최소 너비 설정 */
+            background: #8B5CF6;
+            color: white;
+            padding: 1.25rem; /* 20px를 rem으로 변환 */
+            border-radius: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: auto;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .year-month {
+            font-size: clamp(1.2rem, 3vw, 1.5rem); /* 반응형 폰트 크기 */
+            font-weight: bold;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+            text-align: center;
+        }
+
+        .weekday {
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.625rem;
+        }
+
+        .day {
+            aspect-ratio: 1; /* 정사각형 유지 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: auto;
+            width: 100%;
+            font-size: clamp(0.75rem, 2vw, 1rem);
+            position: relative;
+        }
+
+        .day:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .today {
+            background: white;
+            color: #8B5CF6;
+        }
+
+        .other-month {
+            opacity: 0.5;
+        }
+
+        .holiday {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .current-date {
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            margin-top: 1.25rem;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .nav-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            cursor: pointer;
+            padding: 0.3125rem 0.625rem;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <span class="year">2024</span>
+            <div class="year-month">December</div>
+            <div class="navigation">
+                <button class="nav-button prev-month">←</button>
+                <button class="nav-button next-month">→</button>
+            </div>
+        </div>
+        <div class="calendar-grid">
+            <!-- Javascript will fill this -->
+        </div>
+        <div class="current-date"></div>
+    </div>
+
+    <script>
+        class Calendar {
+            constructor() {
+                this.date = new Date();
+                this.currentYear = this.date.getFullYear();
+                this.currentMonth = this.date.getMonth();
+                
+                this.holidays = {
+                    '2024': {
+                        '0101': '신정',
+                        '0209': '설날',
+                        '0210': '설날',
+                        '0211': '설날',
+                        '0301': '삼일절',
+                        '0410': '21대총선',
+                        '0505': '어린이날',
+                        '0527': '부처님오신날',
+                        '0606': '현충일',
+                        '0815': '광복절',
+                        '0916': '추석',
+                        '0917': '추석',
+                        '0918': '추석',
+                        '1003': '개천절',
+                        '1009': '한글날',
+                        '1225': '성탄절'
+                    },
+                    '2025': {
+                        '0101': '신정',
+                        '0128': '설날',
+                        '0129': '설날',
+                        '0130': '설날',
+                        '0301': '삼일절',
+                        '0505': '어린이날',
+                        '0515': '부처님오신날',
+                        '0606': '현충일',
+                        '0815': '광복절',
+                        '0905': '추석',
+                        '0906': '추석',
+                        '0907': '추석',
+                        '1003': '개천절',
+                        '1009': '한글날',
+                        '1225': '성탄절'
+                    }
+                };
+
+                this.prevMonthBtn = document.querySelector('.prev-month');
+                this.nextMonthBtn = document.querySelector('.next-month');
+                
+                this.bindEvents();
+                this.renderCalendar();
+            }
+
+            isHoliday(year, month, day) {
+                const dateStr = `${String(month + 1).padStart(2, '0')}${String(day).padStart(2, '0')}`;
+                return this.holidays[year]?.[dateStr] !== undefined;
+            }
+
+            bindEvents() {
+                this.prevMonthBtn.addEventListener('click', () => {
+                    this.currentMonth--;
+                    if (this.currentMonth < 0) {
+                        this.currentMonth = 11;
+                        this.currentYear--;
+                    }
+                    this.renderCalendar();
+                });
+
+                this.nextMonthBtn.addEventListener('click', () => {
+                    this.currentMonth++;
+                    if (this.currentMonth > 11) {
+                        this.currentMonth = 0;
+                        this.currentYear++;
+                    }
+                    this.renderCalendar();
+                });
+            }
+
+            renderCalendar() {
+                const firstDay = new Date(this.currentYear, this.currentMonth, 1);
+                const lastDay = new Date(this.currentYear, this.currentMonth + 1, 0);
+                const startingDay = firstDay.getDay();
+                const monthLength = lastDay.getDate();
+                
+                document.querySelector('.year').textContent = this.currentYear;
+                document.querySelector('.year-month').textContent = 
+                    new Date(this.currentYear, this.currentMonth).toLocaleString('ko-KR', { month: 'long' });
+                
+                const calendarGrid = document.querySelector('.calendar-grid');
+                const weekdaysHtml = Array.from({ length: 7 }, (_, i) => 
+                    `<div class="weekday">${'일월화수목금토'[i]}</div>`
+                ).join('');
+                
+                let daysHtml = weekdaysHtml;
+                
+                // Previous month's days
+                const prevMonthLength = new Date(this.currentYear, this.currentMonth, 0).getDate();
+                for (let i = startingDay - 1; i >= 0; i--) {
+                    daysHtml += `<div class="day other-month">${prevMonthLength - i}</div>`;
+                }
+                
+                // Current month's days
+                const today = new Date();
+                for (let i = 1; i <= monthLength; i++) {
+                    const isToday = today.getDate() === i && 
+                                  today.getMonth() === this.currentMonth && 
+                                  today.getFullYear() === this.currentYear;
+                    const isHoliday = this.isHoliday(this.currentYear, this.currentMonth, i);
+                    
+                    const classes = ['day'];
+                    if (isToday) classes.push('today');
+                    if (isHoliday) classes.push('holiday');
+                    
+                    daysHtml += `<div class="${classes.join(' ')}">${i}</div>`;
+                }
+                
+                // Next month's days
+                const remainingDays = 42 - (startingDay + monthLength);
+                for (let i = 1; i <= remainingDays; i++) {
+                    daysHtml += `<div class="day other-month">${i}</div>`;
+                }
+                
+                calendarGrid.innerHTML = daysHtml;
+                
+                // Update current date
+                document.querySelector('.current-date').textContent = 
+                    new Date().toLocaleDateString('ko-KR', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric', 
+                        weekday: 'long' 
+                    });
+            }
+        }
+
+        new Calendar();
+    </script>
+</body>
+</html>
