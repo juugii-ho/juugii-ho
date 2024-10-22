@@ -51,13 +51,25 @@
             cursor: pointer;
             margin: auto;
             position: relative;
+            flex-direction: column;
+        }
+
+        .holiday-name {
+            font-size: 8px;
+            position: absolute;
+            bottom: -14px;
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .day:hover {
             background: rgba(255, 255, 255, 0.2);
         }
 
-        .weekend {
+        .weekend, .holiday {
             background: rgba(255, 255, 255, 0.15);
         }
 
@@ -66,7 +78,7 @@
             color: #8B5CF6;
         }
 
-        .today.weekend {
+        .today.weekend, .today.holiday {
             background: white;
             color: #8B5CF6;
             box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
@@ -135,6 +147,56 @@
                 this.renderCalendar();
             }
 
+            // 한국 공휴일 데이터
+            holidays = {
+                "2024": {
+                    "1": {
+                        "1": "신정",
+                        "9": "설연휴",
+                        "10": "설날",
+                        "11": "설연휴"
+                    },
+                    "2": {
+                        "9": "설연휴",
+                        "10": "설날",
+                        "11": "설연휴"
+                    },
+                    "3": {
+                        "1": "삼일절"
+                    },
+                    "4": {
+                        "10": "21대 총선"
+                    },
+                    "5": {
+                        "5": "어린이날",
+                        "15": "부처님오신날"
+                    },
+                    "6": {
+                        "6": "현충일"
+                    },
+                    "8": {
+                        "15": "광복절"
+                    },
+                    "9": {
+                        "16": "추석연휴",
+                        "17": "추석",
+                        "18": "추석연휴"
+                    },
+                    "10": {
+                        "3": "개천절",
+                        "9": "한글날"
+                    },
+                    "12": {
+                        "25": "크리스마스"
+                    }
+                },
+                "2023": {
+                    "12": {
+                        "25": "크리스마스"
+                    }
+                }
+            };
+
             bindEvents() {
                 this.prevMonthBtn.addEventListener('click', () => {
                     this.currentMonth--;
@@ -157,6 +219,17 @@
 
             isWeekend(dayIndex) {
                 return dayIndex === 0 || dayIndex === 6;
+            }
+
+            getHoliday(year, month, day) {
+                const yearHolidays = this.holidays[year];
+                if (yearHolidays) {
+                    const monthHolidays = yearHolidays[month + 1];
+                    if (monthHolidays) {
+                        return monthHolidays[day] || null;
+                    }
+                }
+                return null;
             }
 
             renderCalendar() {
@@ -187,11 +260,20 @@
                 for (let i = 1; i <= monthLength; i++) {
                     const dayIndex = (startingDay + i - 1) % 7;
                     const isWeekend = this.isWeekend(dayIndex);
+                    const holiday = this.getHoliday(this.currentYear, this.currentMonth, i);
                     const isToday = today.getDate() === i && 
                                   today.getMonth() === this.currentMonth && 
                                   today.getFullYear() === this.currentYear;
                     
-                    daysHtml += `<div class="day ${isToday ? 'today' : ''} ${isWeekend ? 'weekend' : ''}">${i}</div>`;
+                    let dayClass = isToday ? 'today' : '';
+                    if (isWeekend) dayClass += ' weekend';
+                    if (holiday) dayClass += ' holiday';
+
+                    daysHtml += `
+                        <div class="day ${dayClass}">
+                            ${i}
+                            ${holiday ? `<span class="holiday-name">${holiday}</span>` : ''}
+                        </div>`;
                 }
                 
                 // Next month's days
