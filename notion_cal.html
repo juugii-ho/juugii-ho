@@ -2,16 +2,30 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <style>
+<style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    
+        :root {
+            --calendar-padding: 1.5rem;
+            --day-size: 2.5rem;
+        }
+        
         .calendar-container {
-            width: 100%;          /* 이 값을 조절하여 전체 크기 변경 */
-            min-width: 280px;     /* 최소 크기 */
-            max-width: 800px;     /* 최대 크기 */
-            background: rgba(139, 92, 246, 0.8);    /* 80% 투명도의 보라색 */
+            width: 100%;          /* 100vw에서 변경 */
+            height: auto;         /* 100vh에서 변경 */
+            min-width: unset;
+            max-width: unset;
+            background: rgba(139, 92, 246, 0.8);
             color: white;
-            padding: 20px;
+            padding: min(20px, 2vh);
             border-radius: 10px;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            box-sizing: border-box;
         }
 
         .calendar-header {
@@ -22,7 +36,7 @@
         }
 
         .year-month {
-            font-size: 24px;
+            font-size: min(24px, 3vw);
             font-weight: bold;
         }
 
@@ -34,7 +48,7 @@
         }
 
         .weekday {
-            font-size: 14px;
+            font-size: min(14px, 2vw);
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 10px;
         }
@@ -44,8 +58,8 @@
         }
 
         .day {
-            width: 30px;
-            height: 30px;
+            width: min(40px, 5vw);
+            height: min(40px, 5vw);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -57,7 +71,7 @@
         }
 
         .holiday-name {
-            font-size: 8px;
+            font-size: min(8px, 1.5vw);
             position: absolute;
             bottom: -14px;
             width: 100%;
