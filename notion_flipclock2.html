@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .clock-container {
+            width: 250px;
+            height: 140px;
+            background: #8B5CF6;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .clock-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            height: 100%;
+        }
+
+        .time-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flip-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            width: 80px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .flip-card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .colon {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock-display">
+            <div class="time-block">
+                <div class="flip-card hours">00</div>
+            </div>
+            <div class="colon">:</div>
+            <div class="time-block">
+                <div class="flip-card minutes">00</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class FlipClock {
+            constructor() {
+                this.hoursElement = document.querySelector('.hours');
+                this.minutesElement = document.querySelector('.minutes');
+                
+                this.updateClock();
+                setInterval(() => this.updateClock(), 1000);
+            }
+
+            formatNumber(number) {
+                return number.toString().padStart(2, '0');
+            }
+
+            updateClock() {
+                const now = new Date();
+                const hours = this.formatNumber(now.getHours());
+                const minutes = this.formatNumber(now.getMinutes());
+
+                if (this.hoursElement.textContent !== hours) {
+                    this.hoursElement.textContent = hours;
+                }
+                if (this.minutesElement.textContent !== minutes) {
+                    this.minutesElement.textContent = minutes;
+                }
+            }
+        }
+
+        new FlipClock();
+    </script>
+</body>
+</html>
