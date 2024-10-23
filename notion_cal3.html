@@ -5,7 +5,7 @@
     <style>
         .calendar-container {
             width: 250px;
-            height: 300px;
+            height: 280px;
             background: #8B5CF6;
             color: white;
             padding: 20px;
@@ -68,11 +68,8 @@
             opacity: 0.5;
         }
 
-        .current-date {
-            font-size: 12px;
-            margin-top: 20px;
-            text-align: left;
-            color: rgba(255, 255, 255, 0.8);
+        .holiday {
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .nav-button {
@@ -110,7 +107,6 @@
             <div class="weekday">금</div>
             <div class="weekday">토</div>
         </div>
-        <div class="current-date"></div>
     </div>
 
     <script>
@@ -122,6 +118,48 @@
                 
                 this.prevMonthBtn = document.querySelector('.prev-month');
                 this.nextMonthBtn = document.querySelector('.next-month');
+                
+                // 공휴일 정의
+                this.holidays = {
+                    2024: {
+                        '1-1': '신정',
+                        '2-9': '설날',
+                        '2-10': '설날',
+                        '2-11': '설날',
+                        '2-12': '대체공휴일',
+                        '3-1': '삼일절',
+                        '4-10': '21대 총선',
+                        '5-5': '어린이날',
+                        '5-6': '대체공휴일',
+                        '5-15': '부처님오신날',
+                        '6-6': '현충일',
+                        '8-15': '광복절',
+                        '9-16': '추석',
+                        '9-17': '추석',
+                        '9-18': '추석',
+                        '10-3': '개천절',
+                        '10-9': '한글날',
+                        '12-25': '크리스마스'
+                    },
+                    2025: {
+                        '1-1': '신정',
+                        '1-28': '설날',
+                        '1-29': '설날',
+                        '1-30': '설날',
+                        '3-1': '삼일절',
+                        '3-3': '대체공휴일',
+                        '5-5': '어린이날',
+                        '5-6': '부처님오신날',
+                        '6-6': '현충일',
+                        '8-15': '광복절',
+                        '10-3': '개천절',
+                        '10-5': '추석',
+                        '10-6': '추석',
+                        '10-7': '추석',
+                        '10-9': '한글날',
+                        '12-25': '크리스마스'
+                    }
+                };
                 
                 this.bindEvents();
                 this.renderCalendar();
@@ -147,6 +185,16 @@
                 });
             }
 
+            isHoliday(year, month, day) {
+                const dateStr = `${month + 1}-${day}`;
+                return this.holidays[year] && this.holidays[year][dateStr];
+            }
+
+            isWeekend(date) {
+                const day = date.getDay();
+                return day === 0 || day === 6;
+            }
+
             renderCalendar() {
                 const firstDay = new Date(this.currentYear, this.currentMonth, 1);
                 const lastDay = new Date(this.currentYear, this.currentMonth + 1, 0);
@@ -154,7 +202,9 @@
                 const monthLength = lastDay.getDate();
                 
                 document.querySelector('.year').textContent = this.currentYear;
-                document.querySelector('.year-month').textContent = new Date(this.currentYear, this.currentMonth).toLocaleString('ko-KR', { month: 'long' });
+                document.querySelector('.year-month').textContent = 
+                    new Date(this.currentYear, this.currentMonth)
+                        .toLocaleString('ko-KR', { month: 'long' });
                 
                 const calendarGrid = document.querySelector('.calendar-grid');
                 const weekdaysHtml = Array.from({ length: 7 }, (_, i) => 
@@ -166,35 +216,33 @@
                 // Previous month's days
                 const prevMonthLength = new Date(this.currentYear, this.currentMonth, 0).getDate();
                 for (let i = startingDay - 1; i >= 0; i--) {
-                    daysHtml += `<div class="day other-month">${prevMonthLength - i}</div>`;
+                    const prevDate = new Date(this.currentYear, this.currentMonth - 1, prevMonthLength - i);
+                    const isWeekend = this.isWeekend(prevDate);
+                    daysHtml += `<div class="day other-month ${isWeekend ? 'holiday' : ''}">${prevMonthLength - i}</div>`;
                 }
                 
                 // Current month's days
                 const today = new Date();
                 for (let i = 1; i <= monthLength; i++) {
+                    const currentDate = new Date(this.currentYear, this.currentMonth, i);
                     const isToday = today.getDate() === i && 
                                   today.getMonth() === this.currentMonth && 
                                   today.getFullYear() === this.currentYear;
+                    const isWeekend = this.isWeekend(currentDate);
+                    const isHoliday = this.isHoliday(this.currentYear, this.currentMonth, i);
                     
-                    daysHtml += `<div class="day ${isToday ? 'today' : ''}">${i}</div>`;
+                    daysHtml += `<div class="day ${isToday ? 'today' : ''} ${(isWeekend || isHoliday) ? 'holiday' : ''}">${i}</div>`;
                 }
                 
                 // Next month's days
                 const remainingDays = 42 - (startingDay + monthLength);
                 for (let i = 1; i <= remainingDays; i++) {
-                    daysHtml += `<div class="day other-month">${i}</div>`;
+                    const nextDate = new Date(this.currentYear, this.currentMonth + 1, i);
+                    const isWeekend = this.isWeekend(nextDate);
+                    daysHtml += `<div class="day other-month ${isWeekend ? 'holiday' : ''}">${i}</div>`;
                 }
                 
                 calendarGrid.innerHTML = daysHtml;
-                
-                // Update current date
-                document.querySelector('.current-date').textContent = 
-                    new Date().toLocaleDateString('ko-KR', { 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric', 
-                        weekday: 'long' 
-                    });
             }
         }
 
